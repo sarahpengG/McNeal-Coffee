@@ -1,0 +1,21 @@
+doctype html
+
+include header.pug
+
+
+h1#display Login 
+
+#logReg
+    #log
+        h1 Log In
+        form#logForm(action="/api_login" method = "post") 
+            label(for="username")   INTERNET ID
+            input#userL(type="text"  name='username' required )
+            label(for="password") Password
+            input#passL(type="password"  name='password' required )
+            button#submitLogin(type='submit' ) PASSWORD
+
+    
+    a.guest(href='/landing') Continue As Guest 
+
+include footer.pug

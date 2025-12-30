@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Tahoma';
+    src: url('/assets/fonts/Tahoma-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Widescreen';
+    src: url("../fonts/Widescreen-Trial-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Owners';
+    src: url('/assets/fonts/owners.otf');
+}
+
+body {
+    background-color: #f8f0dd;
+    color: black;
+    margin: 0;
+        font-family: "Owners";
+
+
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: #7b0019;
+    border-bottom: 5px solid #f8f8f8;
+    border-width: 1 px;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbarUL {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+.navLink {
+    color: #f8f0dd;
+    font-family: "Widescreen";
+    text-decoration: none;
+}
+.navbarUL li:first-child {
+    width: 100%;
+}
+
+.footerDiv {
+    width: 100%;
+    min-height: 20vh; 
+    background-color: #7b0019;
+    border-top: 5px solid #f8f8f8; 
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: absolute; 
+    margin-top: auto; 
+}
+
+#footerTable {
+    color: #f8f0dd;
+    text-align: left;
+    border-collapse: collapse;
+    font-family: "Widescreen";
+    gap: 10px;
+
+}
+#footerTable th, #footerTable td {
+    padding: 5px 15px;
+}
+#footerUL {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.quickLinks {
+    display: flex;
+    align-items: center;
+}
+.footLink {
+    color: #f8f0dd;
+    font-family: "Widescreen";
+    text-decoration: none;
+}
+
+.footLink:hover {
+    text-decoration: underline;
+}
